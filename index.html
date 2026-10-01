@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern developer portfolio dashboard">
+  <title>N. Albar Maulana — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="cursor-glow"></div>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">&lt;/&gt;</div>
+        <div>
+          <strong>ALBAR<span>DEV</span></strong>
+          <small>portfolio.system</small>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <p class="nav-label">MENU</p>
+        <a href="#home" class="nav-link active"><i data-lucide="layout-dashboard"></i><span>Overview</span></a>
+        <a href="#projects" class="nav-link"><i data-lucide="folder-code"></i><span>Projects</span></a>
+        <a href="#github" class="nav-link"><i data-lucide="github"></i><span>GitHub</span></a>
+        <a href="#skills" class="nav-link"><i data-lucide="code-2"></i><span>Skills</span></a>
+        <a href="#timeline" class="nav-link"><i data-lucide="milestone"></i><span>Timeline</span></a>
+        <a href="#contact" class="nav-link"><i data-lucide="send"></i><span>Contact</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="theme-btn" id="themeBtn"><i data-lucide="moon"></i><span>Toggle theme</span></button>
+        <div class="availability">
+          <span class="status-dot"></span>
+          <div><strong>Available</strong><small>for new projects</small></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="ambient-bg" aria-hidden="true"><span></span><span></span><span></span><i></i><i></i></div>
+      <div class="scroll-progress" aria-hidden="true"><span></span></div>
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i data-lucide="menu"></i></button>
+        <div class="breadcrumb"><span>portfolio</span><b>/</b><strong>overview</strong></div>
+        <a class="github-mini" href="https://github.com/Cibee8272" target="_blank" rel="noreferrer"><i data-lucide="github"></i><span>GitHub</span></a>
+      </header>
+
+      <div class="promo-banner reveal" aria-label="Portfolio announcement">
+          <div class="promo-icon">✦</div>
+          <div class="promo-track">
+            <span>Building modern web experiences</span>
+            <b>•</b>
+            <span>Responsive UI</span>
+            <b>•</b>
+            <span>Clean code</span>
+            <b>•</b>
+            <span>Available for new projects</span>
+            <b>•</b>
+            <span>Building modern web experiences</span>
+            <b>•</b>
+            <span>Responsive UI</span>
+            <b>•</b>
+            <span>Clean code</span>
+            <b>•</b>
+          </div>
+          <span class="promo-arrow">↗</span>
+        </div>
+
+        <section id="home" class="hero section">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> FRONTEND DEVELOPER</div>
+          <h1>Building digital<br><span>experiences</span> that move.</h1>
+          <p class="hero-text">I design and build clean, responsive interfaces with thoughtful interactions and modern web technologies.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">Explore projects <i data-lucide="arrow-up-right"></i></a>
+            <a href="#contact" class="btn ghost">Let's talk <i data-lucide="message-circle"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-float-chips" aria-hidden="true">
+          <span class="float-chip chip-one">⚡ Fast UI</span>
+          <span class="float-chip chip-two">&lt;/&gt; Clean code</span>
+          <span class="float-chip chip-three">◈ Responsive</span>
+        </div>
+        <div class="hero-photo-wrap reveal delay-1" aria-hidden="true">
+          <img class="hero-photo" src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?cs=srgb&dl=pexels-goumbik-574077.jpg&fm=jpg" alt="">
+          <span class="hero-photo-glow"></span>
+        </div>
+        <div class="hero-card reveal delay-1">
+          <div class="terminal-head">
+            <div class="terminal-dots"><span></span><span></span><span></span></div>
+            <small>developer.js</small>
+            <i data-lucide="more-horizontal"></i>
+          </div>
+          <div class="terminal-body">
+            <div><span class="line-num">01</span><span class="purple">const</span> <span class="blue">developer</span> = {</div>
+            <div><span class="line-num">02</span>&nbsp;&nbsp;name: <span class="green">'N. Albar Maulana'</span>,</div>
+            <div><span class="line-num">03</span>&nbsp;&nbsp;role: <span class="green">'Web Developer'</span>,</div>
+            <div><span class="line-num">04</span>&nbsp;&nbsp;focus: [<span class="green">'UI'</span>, <span class="green">'UX'</span>, <span class="green">'Web'</span>],</div>
+            <div><span class="line-num">05</span>&nbsp;&nbsp;coffee: <span class="orange">true</span></div>
+            <div><span class="line-num">06</span>};</div>
+            <div class="typing-line"><span class="line-num">07</span><span class="purple">developer</span>.<span class="blue">build</span>();<span class="caret"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats reveal">
+        <div class="stat"><span class="stat-icon"><i data-lucide="layers-3"></i></span><div><strong data-count="12">0</strong><small>Projects</small></div></div>
+        <div class="stat"><span class="stat-icon"><i data-lucide="git-branch"></i></span><div><strong data-count="8">0</strong><small>Repositories</small></div></div>
+        <div class="stat"><span class="stat-icon"><i data-lucide="coffee"></i></span><div><strong data-count="247">0</strong><small>Cups of coffee</small></div></div>
+        <div class="stat"><span class="stat-icon"><i data-lucide="calendar-days"></i></span><div><strong data-count="3">0</strong><small>Years learning</small></div></div>
+      </section>
+
+      <section class="showcase-ad reveal" aria-label="Featured project promotion">
+        <div class="ad-orb"></div>
+        <div class="ad-copy"><span class="ad-kicker">FEATURED DROP / 01</span><h2>Interfaces that <em>feel alive.</em></h2><p>Scroll through the work and watch every project reveal itself.</p></div>
+        <div class="ad-window"><span></span><span></span><span></span><b></b><i></i></div>
+        <a href="#projects" class="ad-cta">See the work <i data-lucide="arrow-down-right"></i></a>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading reveal">
+          <div><h2>Featured projects</h2></div>
+          <a href="https://github.com/Cibee8272" target="_blank" rel="noreferrer" class="text-link">View GitHub <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="project-preview finance-preview preview-"><img class="project-photo" src="https://images.pexels.com/photos/4405384/pexels-photo-4405384.jpeg?cs=srgb&dl=pexels-2874318-4405384.jpg&fm=jpg" alt="Finance analytics on laptop" loading="lazy"><span class="preview-grid-glow"></span><span class="preview-spark s1"></span><span class="preview-spark s2"></span><img src="assets/finance-preview.svg" alt="Finance dashboard project preview"><div class="preview-shade"></div><span class="preview-label">Finance Dashboard</span></div>
+            <div class="project-info">
+              <div><span class="tag">Dashboard</span><span class="tag">JavaScript</span></div>
+              <h3>Finance Dashboard</h3>
+              <p>Interactive personal finance dashboard with charts, filters and local data.</p>
+              <a href="https://github.com/Cibee8272" target="_blank" rel="noreferrer" class="project-link">Case study <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-preview store-preview preview-"><img class="project-photo" src="https://images.pexels.com/photos/4841113/pexels-photo-4841113.jpeg?cs=srgb&dl=pexels-misolo-cosmetic-2588316-4841113.jpg&fm=jpg" alt="Minimal product photography" loading="lazy"><span class="preview-grid-glow"></span><span class="preview-spark s1"></span><span class="preview-spark s2"></span><img src="assets/minimal-store-preview.svg" alt="Minimal store project preview"><div class="preview-shade"></div><span class="preview-label">Minimal Store</span></div>
+            <div class="project-info">
+              <div><span class="tag">E-commerce</span><span class="tag">UI/UX</span></div>
+              <h3>Minimal Store</h3>
+              <p>Clean shopping experience with responsive product cards and cart interactions.</p>
+              <a href="https://github.com/Cibee8272" target="_blank" rel="noreferrer" class="project-link">View project <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-preview school-preview preview-"><img class="project-photo" src="https://images.pexels.com/photos/20432916/pexels-photo-20432916.jpeg?cs=srgb&dl=pexels-adam-sondel-381265-20432916.jpg&fm=jpg" alt="Laptop in classroom" loading="lazy"><span class="preview-grid-glow"></span><span class="preview-spark s1"></span><span class="preview-spark s2"></span><img src="assets/school-dashboard-preview.svg" alt="School dashboard project preview"><div class="preview-shade"></div><span class="preview-label">School Dashboard</span></div>
+            <div class="project-info">
+              <div><span class="tag">Management</span><span class="tag">HTML/CSS</span></div>
+              <h3>School Dashboard</h3>
+              <p>Role-based dashboard concept for managing students, attendance and schedules.</p>
+              <a href="https://github.com/Cibee8272" target="_blank" rel="noreferrer" class="project-link">View project <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="-showcases">
+          <article class="live-project-ad finance-ad reveal" id="finance-showcase">
+            <div class="live-ad-copy">
+              <span class="ad-kicker">LIVE PROJECT / 01</span>
+              <h3>Finance Dashboard <em>in .</em></h3>
+              <p>Chart, balance, transactions — semuanya bergerak saat section masuk layar.</p>
+              <div class="live-ad-pills"><span>Analytics</span><span>Interactive</span><span>Local data</span></div>
+            </div>
+            <div class="live-stage finance-stage" aria-label=" Finance Dashboard preview">
+              <div class="finance-device">
+                <div class="finance-bar"><b>finance.</b><span>Overview&nbsp;&nbsp; Analytics&nbsp;&nbsp; Wallet</span><i>●</i></div>
+                <div class="finance-balance"><small>AVAILABLE BALANCE</small><strong>$24,680</strong><span>+12.8% this month</span></div>
+                <div class="finance-grid">
+                  <div class="finance-chart"><small>MONTHLY OVERVIEW</small><div class="chart-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="chart-bars"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div>
+                  <div class="finance-ring"><small>SPENDING</small><div class="donut"></div><strong>68%</strong></div>
+                </div>
+                <div class="finance-trans"><small>RECENT TRANSACTIONS</small><div><i></i><b>+$420</b></div><div><i></i><b>-$82</b></div><div><i></i><b>-$36</b></div></div>
+              </div>
+              <span class="live-float finance-float-a">↗ +12.8%</span>
+              <span class="live-float finance-float-b">$2,480 saved</span>
+              <span class="live-dot"></span>
+            </div>
+          </article>
+
+          <article class="live-project-ad store-ad reveal" id="store-showcase">
+            <div class="live-ad-copy">
+              <span class="ad-kicker">LIVE PROJECT / 02</span>
+              <h3>Minimal Store <em>comes alive.</em></h3>
+              <p>Product cards melayang, cart update, dan showcase produk bergerak seperti iklan e-commerce.</p>
+              <div class="live-ad-pills"><span>E-commerce</span><span>UI/UX</span><span>Responsive</span></div>
+            </div>
+            <div class="live-stage store-stage" aria-label=" Minimal Store preview">
+              <div class="store-browser">
+                <div class="store-top"><b>MINIMAL</b><span>New&nbsp;&nbsp; Collections&nbsp;&nbsp; About&nbsp;&nbsp; Cart <strong>2</strong></span></div>
+                <div class="store-hero"><div><small>CURATED ESSENTIALS</small><h4>Simple products.<br><em>Strong presence.</em></h4><button>SHOP NOW ↗</button></div><div class="hero-product"></div></div>
+                <div class="product-row">
+                  <div class="product-card-mini p1"><div class="product-art tee"></div><b>Essential Tee</b><span>$32</span><i>+</i></div>
+                  <div class="product-card-mini p2"><div class="product-art tote"></div><b>Daily Tote</b><span>$48</span><i>+</i></div>
+                  <div class="product-card-mini p3"><div class="product-art cap"></div><b>Studio Cap</b><span>$28</span><i>+</i></div>
+                </div>
+              </div>
+              <span class="cart-pop">+1 added to cart</span>
+              <span class="store-float store-float-a">NEW DROP</span>
+              <span class="store-float store-float-b">FREE SHIPPING</span>
+            </div>
+          </article>
+
+          <article class="live-project-ad school-ad reveal" id="school-showcase">
+            <div class="live-ad-copy">
+              <span class="ad-kicker">LIVE PROJECT / 03</span>
+              <h3>School Dashboard <em>in .</em></h3>
+              <p>Ini yang tadi — sekarang jadi bagian dari sistem showcase yang sama dengan dua project lainnya.</p>
+              <div class="live-ad-pills"><span>Management</span><span>Dashboard</span><span>Responsive</span></div>
+            </div>
+            <div class="live-stage school-stage" aria-label=" School Dashboard preview">
+              <div class="school-laptop">
+                <div class="school-camera"></div>
+                <div class="school-screen">
+                  <div class="school-top"><b>school.</b><span>Overview&nbsp;&nbsp; Students&nbsp;&nbsp; Attendance</span><i>●</i></div>
+                  <div class="school-body"><aside><strong>ADMIN</strong><span class="on">Overview</span><span>Students</span><span>Schedules</span><span>Reports</span></aside><main><small>GOOD MORNING</small><h4>School overview</h4><div class="school-stats"><div><small>STUDENTS</small><b class="school-count" data-target="1248">0</b></div><div><small>ATTENDANCE</small><b>94.8%</b></div><div><small>CLASSES</small><b>32</b></div></div><div class="school-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="school-lines"><i></i><i></i><i></i></div></main></div>
+                </div><div class="school-base"></div>
+              </div>
+              <div class="school-phone school-phone-left"><span></span><small>ATTENDANCE</small><b>94.8%</b><div class="school-ring"></div><i></i><i></i></div>
+              <div class="school-phone school-phone-right"><span></span><small>UPCOMING</small><b>08:30</b><div class="class-mini">Math — XII RPL<br><em>Room 204</em></div><div class="class-mini">UI/UX Design<br><em>Room 106</em></div></div>
+              <span class="school-float sf1">⚡ Fast UI</span><span class="school-float sf2">◈ Responsive</span><span class="school-float sf3">&lt;/&gt; Clean code</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="github" class="section">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">02 / CODE</span><h2>GitHub activity</h2></div>
+          <span class="live-badge"><span></span> Live profile</span>
+        </div>
+        
+        <div class="github-panel reveal">
+          <div class="profile-row">
+            <div class="avatar">Cb</div>
+            <div><h3>@Cibee8272</h3><p>Building things on the web.</p></div>
+            <a class="btn ghost small" href="https://github.com/Cibee8272" target="_blank" rel="noreferrer">Open GitHub <i data-lucide="external-link"></i></a>
+          </div>
+          <div class="repo-grid">
+            <div class="repo"><div class="repo-top"><i data-lucide="book-marked"></i><span>public</span></div><strong>portfolio-dashboard</strong><p>My interactive developer portfolio.</p><small>● JavaScript &nbsp; ★ 12 &nbsp;⑂ 3</small></div>
+            <div class="repo"><div class="repo-top"><i data-lucide="book-marked"></i><span>public</span></div><strong>kaskita</strong><p>Modern cash management web app.</p><small>● HTML &nbsp; ★ 8 &nbsp;⑂ 2</small></div>
+            <div class="repo"><div class="repo-top"><i data-lucide="book-marked"></i><span>public</span></div><strong>ui-components</strong><p>Reusable UI experiments and snippets.</p><small>● CSS &nbsp; ★ 5 &nbsp;⑂ 1</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">03 / STACK</span><h2>Tools & skills</h2></div>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-list reveal">
+            <div class="skill"><div class="skill-top"><span>HTML & CSS</span><b>90%</b></div><div class="bar"><i style="--value:90%"></i></div></div>
+            <div class="skill"><div class="skill-top"><span>JavaScript</span><b>82%</b></div><div class="bar"><i style="--value:82%"></i></div></div>
+            <div class="skill"><div class="skill-top"><span>UI / UX</span><b>78%</b></div><div class="bar"><i style="--value:78%"></i></div></div>
+            <div class="skill"><div class="skill-top"><span>Git & GitHub</span><b>75%</b></div><div class="bar"><i style="--value:75%"></i></div></div>
+          </div>
+          <div class="tech-grid reveal delay-1">
+            <div class="tech"><i data-lucide="code-2"></i><span>HTML5</span></div>
+            <div class="tech"><i data-lucide="palette"></i><span>CSS3</span></div>
+            <div class="tech"><i data-lucide="braces"></i><span>JavaScript</span></div>
+            <div class="tech"><i data-lucide="github"></i><span>GitHub</span></div>
+            <div class="tech"><i data-lucide="git-branch"></i><span>Git</span></div>
+            <div class="tech"><i data-lucide="figma"></i><span>Figma</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="section">
+        <div class="section-heading reveal"><div><span class="section-kicker">04 / JOURNEY</span><h2>Learning timeline</h2></div></div>
+        <div class="timeline">
+          <div class="timeline-item reveal"><span class="time-dot"></span><small>2026 — NOW</small><h3>Building real-world projects</h3><p>Exploring responsive interfaces, JavaScript interactions and deployment workflows.</p></div>
+          <div class="timeline-item reveal"><span class="time-dot"></span><small>2025</small><h3>Frontend foundations</h3><p>Focused on HTML, CSS, JavaScript and building interfaces from scratch.</p></div>
+          <div class="timeline-item reveal"><span class="time-dot"></span><small>2024</small><h3>Started coding</h3><p>Learning the fundamentals and experimenting with small web projects.</p></div>
+        </div>
+      </section>
+
+      <section class="mini-ad reveal" aria-label="Contact promotion"><span class="mini-ad-glow"></span><div><span class="ad-kicker">NEXT BUILD</span><strong>Your idea could be the next case study.</strong></div><a href="#contact">Start a project <i data-lucide="arrow-up-right"></i></a></section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-card reveal">
+          <div><span class="section-kicker">05 / CONTACT</span><h2>Have an idea?<br><span>Let's build it.</span></h2><p>Send a message and let's turn the idea into something useful.</p></div>
+          <form id="contactForm">
+            <label>Name<input type="text" id="name" placeholder="Your name" required></label>
+            <label>Email<input type="email" id="email" placeholder="you@example.com" required></label>
+            <label>Message<textarea id="message" rows="4" placeholder="Tell me about your idea..." required></textarea></label>
+            <button class="btn primary" type="submit">Send message <i data-lucide="send"></i></button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </section>
+
+      <footer><span>© 2026 N. Albar Maulana</span></footer>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
